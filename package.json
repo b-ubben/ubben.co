@@ -1,0 +1,23 @@
+{
+  "name": "ubben.co",
+  "version": "1.0.0",
+  "description": "Brandon Ubben's personal blog",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "eleventy --serve",
+    "build": "eleventy && parcel build src/assets/js/main.js --out-file bundle.js -d public  && parcel build src/assets/scss/main.scss --out-file main.css -d public",
+    "dev": "concurrently \"eleventy --watch\" \"eleventy --serve\" \"parcel watch src/assets/js/main.js --out-file bundle.js -d public\" \"parcel watch src/assets/scss/main.scss --out-file main.css -d public\"",
+    "dev:style": "concurrently \"parcel watch src/assets/scss/main.scss --out-file main.css -d public\" \"eleventy --serve\""
+  },
+  "author": "Brandon Ubben",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "concurrently": "^4.1.2",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.22.12"
+  }
+}
