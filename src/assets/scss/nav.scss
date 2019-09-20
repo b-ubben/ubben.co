@@ -1,0 +1,22 @@
+.logo-container {
+  max-width: 58px;
+  min-height: 75px;
+}
+
+.nav {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding: 0.25rem 0.15rem;
+  height: 75px;
+}
+
+.nav-link {
+  display: inline-block;
+}
+
+.nav-link-anchor {
+  color: $white;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}

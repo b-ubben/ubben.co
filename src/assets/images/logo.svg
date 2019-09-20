@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"><meta name="description" content="Personal blog and point of contact for Brandon Ubben."><meta name="keywords" content="brandon ubben, ubben, web developer blog, javascript blog, vim blog"><title>Index | Ubben.co</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:300,400,700&amp;display=swap"><link rel="stylesheet" href="main.css"><script src="bundle.js" defer></script></head><body><nav class="nav"><figure class="logo-container">
+
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 267.5 226.9" style="enable-background:new 0 0 267.5 226.9;" xml:space="preserve">
 <style type="text/css">
@@ -75,4 +75,3 @@
 	</g>
 </g>
 </svg>
-</figure><ul class="nav-links-list"><li class="nav-link"><a class="nav-link-anchor" href="/">Home</a></li><li class="nav-link"><a class="nav-link-anchor" href="/about">About</a></li><li class="nav-link"><a class="nav-link-anchor" href="/blog">Blog</a></li><li class="nav-link"><a class="nav-link-anchor" href="/contact">Contact</a></li></ul></nav><h1>Hello World!</h1><footer class="primary-footer"><p class="text-small">Brandon Ubben &copy; 2019</p></footer></body></html>

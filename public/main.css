@@ -349,7 +349,6 @@ template {
 }
 
 /* Resets */
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:300,400,700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -382,6 +381,29 @@ a {
 body {
   background: #01060E;
   color: #FAFAFA;
+}
+
+.logo-container {
+  max-width: 58px;
+  min-height: 75px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.15rem;
+  height: 75px;
+}
+
+.nav-link {
+  display: inline-block;
+}
+
+.nav-link-anchor {
+  color: #FAFAFA;
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=/main.css.map */

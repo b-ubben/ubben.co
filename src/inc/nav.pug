@@ -1,0 +1,7 @@
+nav(class="nav")
+  figure(class="logo-container")
+    include ../assets/images/logo.svg
+  ul(class="nav-links-list")
+    each navLink in navLinks
+      li(class="nav-link")
+        a(href=navLink.href class="nav-link-anchor")=navLink.link
