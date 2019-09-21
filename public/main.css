@@ -384,16 +384,20 @@ body {
 }
 
 .logo-container {
+  margin: 0;
   max-width: 58px;
-  min-height: 75px;
+  padding: 0;
 }
 
 .nav {
+  background: rgba(0, 0, 0, 0.22);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.25rem 0.15rem;
+  font-size: 14px;
+  font-size: calc(14px + 0.25vw);
   height: 75px;
+  padding: 0.25rem 0.75rem;
 }
 
 .nav-link {
@@ -404,6 +408,9 @@ body {
   color: #FAFAFA;
   font-weight: bold;
   margin-right: 0.5rem;
+}
+.nav-link-anchor:focus, .nav-link-anchor:hover {
+  color: #E6B450;
 }
 
 /*# sourceMappingURL=/main.css.map */

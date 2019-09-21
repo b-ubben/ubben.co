@@ -1,0 +1,13 @@
+<nav class="nav">
+  <figure class="logo-container">
+    {% include './../assets/images/logo.svg' %}
+  </figure>
+
+  <ul class="nav-links-list">
+  {% for navLink in navLinks %}
+    <li class="nav-link">
+      <a class="nav-link-anchor" href="{{ navLink.href }}">{{ navLink.link }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</nav>
