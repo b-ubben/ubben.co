@@ -1,8 +1,35 @@
 .index-hero {
+  position: relative;
   width: 100%;
 }
 
 .index-hero-video {
-  object-fit: cover;
+  margin: 0;
+  padding: 0;
   max-height: 502px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.index-hero-video-container {
+  margin: 0;
+  padding: 0;
+}
+
+.index-hero-caption-container {
+  background: $black-smoke;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.index-hero-caption {
+  text-align: right;
+  width: 100%;
 }
