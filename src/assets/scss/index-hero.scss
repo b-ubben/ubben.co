@@ -17,7 +17,7 @@
 }
 
 .index-hero-caption-container {
-  background: $black-smoke;
+  background: rgba(0, 0, 0, 0.55);
   display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,23 @@
 }
 
 .index-hero-caption {
+  padding-right: 3rem;
   text-align: right;
+  text-shadow: $shadow;
   width: 100%;
+
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 64px;
+    font-size: calc(64px + 0.25vw);
+  }
+
+  h2 {
+    font-size: 36px;
+    font-size: calc(36px + 0.25vw);
+  }
 }
