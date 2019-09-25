@@ -1,0 +1,13 @@
+$index-block-height: 400px;
+
+.index-block {
+  display: flex;
+    flex-wrap: wrap;
+  height: $index-block-height;
+}
+
+.index-block-title {
+  font-size: 36px;
+  font-size: calc(36px + 0.25vw);
+  width: 100%;
+}

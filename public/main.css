@@ -473,4 +473,16 @@ body {
   font-size: calc(36px + 0.25vw);
 }
 
+.index-block {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.index-block-title {
+  font-size: 36px;
+  font-size: calc(36px + 0.25vw);
+  width: 100%;
+}
+
 /*# sourceMappingURL=/main.css.map */
