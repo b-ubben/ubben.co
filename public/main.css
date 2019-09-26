@@ -442,7 +442,7 @@ body {
 }
 
 .index-hero-caption-container {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(25, 25, 25, 0.41);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -474,14 +474,50 @@ body {
 }
 
 .index-block {
-  display: flex;
-  flex-wrap: wrap;
   height: 400px;
+}
+
+.index-block__grey {
+  background: #2E323A;
+}
+
+.index-block__yellow {
+  background: #E6B450;
+  color: #01060E;
+}
+
+.index-block-card {
+  max-width: 33%;
+}
+
+.index-block-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.index-block-content {
+  font-size: 21px;
+  font-size: calc(21px + 0.25vw);
+  margin: 0;
+  padding: 1rem;
+}
+
+.index-block-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.index-block-section {
+  max-width: 50%;
 }
 
 .index-block-title {
   font-size: 36px;
   font-size: calc(36px + 0.25vw);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 3rem;
+  padding-left: 1rem;
   width: 100%;
 }
 

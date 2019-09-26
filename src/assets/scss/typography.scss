@@ -10,6 +10,8 @@ $plus-font-size-fallback: 14px;
 $plus-font-size: calc(14px + 0.25vw);
 $large-font-size-fallback: 18px;
 $large-font-size: calc(18px + 0.25vw);
+$xl-font-size-fallback: 21px;
+$xl-font-size: calc(21px + 0.25vw);
 
 body {
   font-family: $body-font, $system-fonts;

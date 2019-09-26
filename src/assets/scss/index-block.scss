@@ -1,13 +1,49 @@
 $index-block-height: 400px;
 
 .index-block {
-  display: flex;
-    flex-wrap: wrap;
   height: $index-block-height;
+}
+
+.index-block__grey {
+  background: $grey;
+}
+
+.index-block__yellow {
+  background: $yellow;
+  color: $black;
+}
+
+.index-block-card {
+  max-width: 33%;
+}
+
+.index-block-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.index-block-content {
+  font-size: $xl-font-size-fallback;
+  font-size: $xl-font-size;
+  margin: 0;
+  padding: 1rem;
+}
+
+.index-block-flex-container {
+  display: flex;
+    align-items: center;
+}
+
+.index-block-section {
+  max-width: 50%;
 }
 
 .index-block-title {
   font-size: 36px;
   font-size: calc(36px + 0.25vw);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 3rem;
+  padding-left: 1rem;
   width: 100%;
 }
