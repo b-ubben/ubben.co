@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.index-hero-video {
+.index-hero__video {
   margin: 0;
   padding: 0;
   max-height: 502px;
@@ -11,12 +11,12 @@
   width: 100%;
 }
 
-.index-hero-video-container {
+.index-hero__video-container {
   margin: 0;
   padding: 0;
 }
 
-.index-hero-caption-container {
+.index-hero__caption-container {
   background: rgba(25, 25, 25, 0.41);
   display: flex;
     align-items: center;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-.index-hero-caption {
+.index-hero__caption {
   padding-right: 3rem;
   text-align: right;
   text-shadow: $shadow;

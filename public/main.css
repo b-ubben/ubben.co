@@ -429,7 +429,7 @@ body {
   width: 100%;
 }
 
-.index-hero-video {
+.index-hero__video {
   margin: 0;
   padding: 0;
   max-height: 502px;
@@ -437,12 +437,12 @@ body {
   width: 100%;
 }
 
-.index-hero-video-container {
+.index-hero__video-container {
   margin: 0;
   padding: 0;
 }
 
-.index-hero-caption-container {
+.index-hero__caption-container {
   background: rgba(25, 25, 25, 0.41);
   display: flex;
   align-items: center;
@@ -455,21 +455,21 @@ body {
   width: 100%;
 }
 
-.index-hero-caption {
+.index-hero__caption {
   padding-right: 3rem;
   text-align: right;
   text-shadow: 1px 3px 21px rgba(0, 0, 0, 0.11);
   width: 100%;
 }
-.index-hero-caption h1, .index-hero-caption h2 {
+.index-hero__caption h1, .index-hero__caption h2 {
   margin: 0;
   padding: 0;
 }
-.index-hero-caption h1 {
+.index-hero__caption h1 {
   font-size: 64px;
   font-size: calc(64px + 0.25vw);
 }
-.index-hero-caption h2 {
+.index-hero__caption h2 {
   font-size: 36px;
   font-size: calc(36px + 0.25vw);
 }
@@ -479,56 +479,56 @@ body {
   overflow: hidden;
 }
 
-.index-block__grey {
+.index-block--grey {
   background: #2E323A;
 }
 
-.index-block__yellow {
+.index-block--yellow {
   background: #E6B450;
   color: black;
 }
 
-.index-block__tall {
+.index-block--tall {
   height: 500px;
 }
 
-.index-block-card {
+.index-block__card {
   padding: 1rem;
   transition: 0.15s ease-in;
 }
-.index-block-card:focus, .index-block-card:hover {
+.index-block__card:focus, .index-block__card:hover {
   background: #eecb86;
   box-shadow: 1px 3px 21px rgba(0, 0, 0, 0.11);
   cursor: pointer;
   transform: scale(1.05);
 }
-.index-block-card:focus:first-of-type, .index-block-card:hover:first-of-type {
+.index-block__card:focus:first-of-type, .index-block__card:hover:first-of-type {
   transform: translateX(3%);
 }
-.index-block-card:focus:last-of-type, .index-block-card:hover:last-of-type {
+.index-block__card:focus:last-of-type, .index-block__card:hover:last-of-type {
   transform: translateX(-3%);
 }
 
-.index-block-card-body {
+.index-block__card__body {
   font-size: 14px;
   font-size: calc(14px + 0.25vw);
   line-height: 1.65rem;
   max-width: 25rem;
 }
 
-.index-block-card-title {
+.index-block__card__title {
   font-size: 18px;
   font-size: calc(18px + 0.25vw);
   max-width: 20rem;
 }
 
-.index-block-card-container {
+.index-block__card-container {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 
-.index-block-content {
+.index-block__content {
   font-size: 14px;
   font-size: calc(14px + 0.25vw);
   line-height: 1.65rem;
@@ -537,16 +537,16 @@ body {
   padding: 1rem;
 }
 
-.index-block-flex-container {
+.index-block__flex-container {
   display: flex;
   align-items: center;
 }
 
-.index-block-section {
+.index-block__section {
   width: 50%;
 }
 
-.index-block-title {
+.index-block__title {
   font-size: 36px;
   font-size: calc(36px + 0.25vw);
   margin-top: 0;
