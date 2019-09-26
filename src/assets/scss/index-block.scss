@@ -1,7 +1,6 @@
-$index-block-height: 400px;
-
 .index-block {
-  height: $index-block-height;
+  height: 400px;
+  overflow: hidden;
 }
 
 .index-block__grey {
@@ -13,19 +12,56 @@ $index-block-height: 400px;
   color: $black;
 }
 
+.index-block__tall {
+  height: 500px;
+}
+
 .index-block-card {
-  max-width: 33%;
+  padding:  1rem;
+  transition: .15s ease-in;
+
+  &:focus,
+  &:hover {
+    background: lighten($yellow, 12%);
+    box-shadow: $shadow;
+    cursor: pointer;
+    transform: scale(1.05);
+
+    &:first-of-type {
+      transform: translateX(3%);
+    }
+
+    &:last-of-type {
+      transform: translateX(-3%);
+    }
+  }
+}
+
+.index-block-card-body {
+  font-size: $plus-font-size-fallback;
+  font-size: $plus-font-size;
+  line-height: 1.65rem;
+  max-width: 25rem;
+}
+
+.index-block-card-title {
+  font-size: $large-font-size-fallback;
+  font-size: $large-font-size;
+  max-width: 20rem;
 }
 
 .index-block-card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .index-block-content {
-  font-size: $xl-font-size-fallback;
-  font-size: $xl-font-size;
+  font-size: $plus-font-size-fallback;
+  font-size: $plus-font-size;
+  line-height: 1.65rem;
   margin: 0;
+  max-width: 36rem;
   padding: 1rem;
 }
 
@@ -35,7 +71,7 @@ $index-block-height: 400px;
 }
 
 .index-block-section {
-  max-width: 50%;
+  width: 50%;
 }
 
 .index-block-title {

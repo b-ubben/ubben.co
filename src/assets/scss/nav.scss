@@ -1,11 +1,12 @@
 .logo-container {
   margin: 0;
-  max-width: 58px;
+  max-width: 75px;
   padding: 0;
 }
 
 .nav {
   background: $black-smoke;
+  box-shadow: $shadow;
   display: flex;
     align-items: center;
     justify-content: space-between;

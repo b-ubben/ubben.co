@@ -1,9 +1,9 @@
-$black: #01060E;
-$black-smoke: rgba(0, 0, 0, 0.22);
+$black: darken(#01060E, 3%);
+$black-smoke: rgba(0, 0, 0, 0.11);
 $gradient-base: rgb(230,180,80);
 $gradient: linear-gradient(145deg, rgba(230,180,80,1) 30%, rgba(194,217,76,1) 70%, rgba(194,217,76,1) 100%);
 $grey: #2E323A;
-$shadow: 1px 3px 16px $black-smoke;
+$shadow: 1px 3px 21px $black-smoke;
 $white: #FAFAFA;
 $yellow: #E6B450;
 
