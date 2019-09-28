@@ -50,3 +50,9 @@
     font-size: calc(36px + 0.25vw);
   }
 }
+
+@media (max-width: 768px) {
+  .index-hero__caption {
+    padding-right: 1rem;
+  }
+}

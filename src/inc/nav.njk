@@ -3,10 +3,10 @@
     {% include './../assets/images/logo.svg' %}
   </figure>
 
-  <ul class="nav-links-list">
+  <ul class="nav__links-list">
   {% for navLink in navLinks %}
-    <li class="nav-link">
-      <a class="nav-link-anchor" href="{{ navLink.href }}">{{ navLink.link }}</a>
+    <li class="nav__links-list__item">
+      <a class="nav__links-list__item__anchor" href="{{ navLink.href }}">{{ navLink.link }}</a>
     </li>
   {% endfor %}
   </ul>

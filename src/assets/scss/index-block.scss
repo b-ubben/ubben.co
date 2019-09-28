@@ -83,3 +83,22 @@
   padding-left: 1rem;
   width: 100%;
 }
+
+@media(max-width: 902px) {
+  .index-block--tall {
+    height: 1000px;
+  }
+
+  .index-block__card-container,
+  .index-block__flex-container {
+    flex-wrap: wrap;
+  }
+
+  .index-block__card {
+    width: 50%;
+  }
+
+  .index-block__section {
+    width: 100%;
+  }
+}
