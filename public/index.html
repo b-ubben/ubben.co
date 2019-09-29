@@ -12,8 +12,6 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:300,400,700&display=swap">
   <link rel="stylesheet" href="main.css">
-
-  <script src="bundle.js" defer></script>
 </head>
 
 
@@ -102,36 +100,39 @@
   </figure>
 
   <ul class="nav__links-list">
-  
+    <li class="nav__links-list__item--button">
+      <button class="nav__close-button">EXIT</button>
+    </li>
+    
     <li class="nav__links-list__item">
       <a class="nav__links-list__item__anchor" href="/">Home</a>
     </li>
-  
+    
     <li class="nav__links-list__item">
       <a class="nav__links-list__item__anchor" href="/about">About</a>
     </li>
-  
+    
     <li class="nav__links-list__item">
       <a class="nav__links-list__item__anchor" href="/blog">Blog</a>
     </li>
-  
+    
     <li class="nav__links-list__item">
       <a class="nav__links-list__item__anchor" href="/contact">Contact</a>
     </li>
-  
+    
   </ul>
 
   <button class="nav__menu-button">MENU</button>
 </nav>
 
 
-    <main>
+    <main class="container">
 
       
 <header class="index-hero">
   <figure class="index-hero__video-container">
     <video autoplay loop class="index-hero__video">
-      <source src="videos/web-banner-video.mp4" type="video/mp4">
+      <source src="https://images.ubben.co/web-banner-video.mp4" type="video/mp4">
       Please switch to a browser that isn't from the 90's!
     </video>
   </figure>
@@ -250,6 +251,8 @@
     <footer class="footer">
   <p class="text-small">Brandon Ubben &copy; 2019</p>
 </footer>
+
+<script src="bundle.js"></script>
 
 
   </body>

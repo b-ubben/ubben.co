@@ -4,11 +4,14 @@
   </figure>
 
   <ul class="nav__links-list">
-  {% for navLink in navLinks %}
+    <li class="nav__links-list__item--button">
+      <button class="nav__close-button">EXIT</button>
+    </li>
+    {% for navLink in navLinks %}
     <li class="nav__links-list__item">
       <a class="nav__links-list__item__anchor" href="{{ navLink.href }}">{{ navLink.link }}</a>
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
 
   <button class="nav__menu-button">MENU</button>

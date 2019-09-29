@@ -424,6 +424,14 @@ body {
   color: #E6B450;
 }
 
+.nav__close-button {
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.nav__close-button,
 .nav__menu-button {
   background: transparent;
   border: none;
@@ -433,16 +441,21 @@ body {
   font-size: calc(14px + 0.25vw);
   font-weight: 700;
   padding: 0.5rem 1rem;
-  z-index: 100;
 }
-.nav__menu-button:focus, .nav__menu-button:hover {
+.nav__close-button:focus, .nav__close-button:hover,
+.nav__menu-button:focus,
+.nav__menu-button:hover {
   background: #2E323A;
   border-radius: 33px;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .nav__links-list {
+  .nav__close-button {
+    display: block;
+  }
+
+  .nav__links-list--expanded {
     background: rgba(0, 0, 0, 0.95);
     border-left: 4px solid #2E323A;
     box-shadow: 1px 3px 21px rgba(0, 0, 0, 0.11);
@@ -456,6 +469,10 @@ body {
     bottom: 0;
     left: 50%;
     z-index: 10;
+  }
+
+  .nav__links-list {
+    display: none;
   }
 
   .nav__links-list__item {
@@ -478,13 +495,19 @@ body {
   .nav__links-list__item__anchor {
     margin-left: 1rem;
   }
-
-  .nav__menu-button {
-    position: fixed;
-    top: 2%;
-    right: 2%;
-  }
 }
+.out-of-focus {
+  filter: grayscale(99%) blur(3px);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .index-hero {
   position: relative;
   width: 100%;

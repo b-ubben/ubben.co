@@ -6,7 +6,7 @@
   "scripts": {
     "test": "eleventy --serve",
     "build": "eleventy && parcel build src/assets/js/main.js --out-file bundle.js -d public  && parcel build src/assets/scss/main.scss --out-file main.css -d public",
-    "dev": "concurrently \"eleventy --watch\" \"eleventy --serve\" \"parcel watch src/assets/js/main.js --out-file bundle.js -d public\" \"parcel watch src/assets/scss/main.scss --out-file main.css -d public\"",
+    "dev": "concurrently \"eleventy --serve\" \"parcel watch src/assets/js/main.js --out-file bundle.js -d public\" \"parcel watch src/assets/scss/main.scss --out-file main.css -d public\"",
     "dev:style": "concurrently \"parcel watch src/assets/scss/main.scss --out-file main.css -d public\" \"eleventy --serve\""
   },
   "author": "Brandon Ubben",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.9.0",
     "concurrently": "^4.1.2",
+    "nav": "0.0.2",
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.3"
   },

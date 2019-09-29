@@ -1,1 +1,1 @@
-console.log('Bundled!');
+import './nav';
