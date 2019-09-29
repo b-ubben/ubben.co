@@ -1,18 +1,18 @@
 [
   {
     "href": "/",
-    "link": "Home"
+    "link": "HOME"
   },
   {
     "href": "/about",
-    "link": "About"
+    "link": "ABOUT"
   },
   {
     "href": "/blog",
-    "link": "Blog"
+    "link": "BLOG"
   },
   {
     "href": "/contact",
-    "link": "Contact"
+    "link": "CONTACT"
   }
 ]

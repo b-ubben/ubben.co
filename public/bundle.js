@@ -121,6 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var menuButton = document.querySelector('.nav__menu-button');
 var closeButton = document.querySelector('.nav__close-button');
 var navLinksList = document.querySelector('.nav__links-list');
+var container = document.querySelector('.container');
 
 function hideNav() {
   navLinksList.classList.remove('show', 'nav__links-list--expanded');
@@ -128,15 +129,18 @@ function hideNav() {
 }
 
 function showNav() {
-  navLinksList.classList.remove('hidden');
   navLinksList.classList.add('show', 'nav__links-list--expanded');
+  navLinksList.classList.remove('hidden');
 }
 
 menuButton.addEventListener('click', function (e) {
-  return showNav();
+  showNav();
 });
 closeButton.addEventListener('click', function (e) {
-  return hideNav();
+  hideNav();
+});
+window.addEventListener('resize', function (e) {
+  container.clientWidth > 768 && navLinksList.classList.remove('hidden');
 });
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
@@ -170,7 +174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50423" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50763" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

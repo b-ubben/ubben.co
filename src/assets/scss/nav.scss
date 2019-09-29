@@ -10,10 +10,8 @@
   display: flex;
     align-items: center;
     justify-content: space-between;
-  font-size: $plus-font-size-fallback;
-  font-size: $plus-font-size;
   height: 75px;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 1rem;
 }
 
 .nav__links-list__item {
@@ -22,7 +20,8 @@
 
 .nav__links-list__item__anchor {
   color: $white;
-  font-weight: bold;
+  font-family: $heading-font;
+  font-weight: 700;
   margin-right: 0.5rem;
 
   &:focus,
@@ -33,9 +32,6 @@
 
 .nav__close-button {
   display: none;
-  position: absolute;
-  top: 3%;
-  right: 3%;
 }
 
 .nav__close-button,
@@ -44,37 +40,54 @@
   border: none;
   color: $white;
   font-family: $heading-font;
-  font-size: $plus-font-size-fallback;
-  font-size: $plus-font-size;
+  font-size: $xl-font-size-fallback;
+  font-size: $xl-font-size;
   font-weight: 700;
   padding: 0.5rem 1rem;
 
   &:focus,
   &:hover {
-    background: $grey;
-    border-radius: 33px;
+    color: $yellow;
     cursor: pointer;
   }
 }
 
+.nav__menu-button {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .nav__close-button {
+  .nav__close-button,
+  .nav__menu-button {
     display: block;
   }
 
+  .nav__close-button {
+    background: $yellow;
+    color: $black;
+    margin: 0 0 2rem 0;
+    padding: 2rem 2rem 1rem 0;
+    text-align: right;
+    width: 100%;
+
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
   .nav__links-list--expanded {
+    animation: .1s linear slideIn;
     background: rgba($black, 0.95);
-    border-left: 4px solid $grey;
+    border-left: 25px solid $grey;
     box-shadow: $shadow;
-    display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
+    font-size: $xl-font-size-fallback;
+    font-size: $xl-font-size;
     position: fixed;
       top: 0;
       right: 0;
       bottom: 0;
-      left: 50%;
+      left: 0;
     z-index: 10;
   }
 
@@ -84,23 +97,15 @@
 
   .nav__links-list__item {
     display: block;
-    font-size: 36px;
-    font-size: calc(36px+ 0.25vw);
     padding: 0.5rem 1rem;
+    text-align: right;
     transition: .1s ease-in;
     width: 100%;
-
-    &::after {
-      background: $white;
-      border-radius: 2px;
-      content: "";
-      display: block;
-      height: 3px;
-      margin: 0.25rem;
-    }
   }
+}
 
-  .nav__links-list__item__anchor {
-    margin-left: 1rem;
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
   }
 }
