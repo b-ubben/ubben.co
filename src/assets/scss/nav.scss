@@ -31,6 +31,25 @@
   }
 }
 
+.nav__menu-button {
+  background: transparent;
+  border: none;
+  color: $white;
+  font-family: $heading-font;
+  font-size: $plus-font-size-fallback;
+  font-size: $plus-font-size;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+
+  &:focus,
+  &:hover {
+    background: $grey;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 768px) {
   .nav__links-list {
     background: rgba($black, 0.95);
@@ -53,8 +72,26 @@
     font-size: 36px;
     font-size: calc(36px+ 0.25vw);
     padding: 0.5rem 1rem;
-    text-align: center;
     transition: .1s ease-in;
     width: 100%;
+
+    &::after {
+      background: $white;
+      border-radius: 2px;
+      content: "";
+      display: block;
+      height: 3px;
+      margin: 0.25rem;
+    }
+  }
+
+  .nav__links-list__item__anchor {
+    margin-left: 1rem;
+  }
+
+  .nav__menu-button {
+    position: fixed;
+    top: 2%;
+    right: 2%;
   }
 }
