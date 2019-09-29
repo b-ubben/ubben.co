@@ -62,6 +62,11 @@
     display: block;
   }
 
+  .nav__menu-button {
+    font-size: $base-font-size-fallback;
+    font-size: $base-font-size;
+  }
+
   .nav__close-button {
     background: $yellow;
     color: $black;

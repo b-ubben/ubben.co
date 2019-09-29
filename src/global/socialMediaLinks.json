@@ -1,0 +1,22 @@
+[
+  {
+    "channel": "LinkedIn",
+    "url": "https://www.linkedin.com/in/brandonubben",
+    "vanityUrl": "/in/brandonubben"
+  },
+  {
+    "channel": "GitHub",
+    "url": "https://github.com/b-ubben",
+    "vanityUrl": "b-ubben"
+  },
+  {
+    "channel": "Email",
+    "url": "mailto:brandon@ubben.co",
+    "vanityUrl": "brandon@ubben.co"
+  },
+  {
+    "channel": "Twitter",
+    "url": "https://twitter.com/_ubben",
+    "vanityUrl": "@_ubben"
+  }
+]

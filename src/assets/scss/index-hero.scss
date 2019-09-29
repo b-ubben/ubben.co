@@ -6,7 +6,7 @@
 .index-hero__video {
   margin: 0;
   padding: 0;
-  max-height: 502px;
+  height: 502px;
   object-fit: cover;
   width: 100%;
 }
@@ -17,7 +17,7 @@
 }
 
 .index-hero__caption-container {
-  background: rgba(25, 25, 25, 0.41);
+  background: rgba(lighten($black, 25%), 0.18);
   display: flex;
     align-items: center;
     justify-content: center;
@@ -54,5 +54,15 @@
 @media (max-width: 768px) {
   .index-hero__caption {
     padding-right: 1rem;
+
+    h1 {
+      font-size: 52px;
+      font-size: calc(52px + 0.25vw);
+    }
+
+    h2 {
+      font-size: 28px;
+      font-size: calc(28px + 0.25vw);
+    }
   }
 }
