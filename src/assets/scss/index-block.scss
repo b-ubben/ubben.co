@@ -17,15 +17,16 @@
 }
 
 .index-block__card {
+  border: 4px solid transparent;
   padding:  1rem;
   transition: .15s ease-in;
 
   &:focus,
   &:hover {
-    background: lighten($yellow, 12%);
+    border: 4px solid $black;
+    border-radius: 4px;
     box-shadow: $shadow;
     cursor: pointer;
-    transform: scale(1.05);
   }
 }
 
@@ -73,6 +74,11 @@
 .index-block__section {
   width: 50%;
   padding: 1rem;
+}
+
+.index-block__education-list__item,
+.index-block__experience-list__item {
+  line-height: 1.3rem;
 }
 
 .index-block__social-media-list {
