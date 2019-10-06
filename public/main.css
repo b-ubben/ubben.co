@@ -668,6 +668,11 @@ body {
   font-size: calc(14px + 0.25vw);
 }
 
+.index-block__social-media-list__item__link:focus, .index-block__social-media-list__item__link:hover {
+  color: #FAFAFA;
+  outline: none;
+}
+
 .index-block__resume-button {
   background: black;
   border: solid 5px transparent;

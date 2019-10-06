@@ -93,6 +93,14 @@
   font-size: $plus-font-size;
 }
 
+.index-block__social-media-list__item__link {
+  &:focus,
+  &:hover {
+    color: $white;
+    outline: none;
+  }
+}
+
 .index-block__resume-button {
   background: $black;
   border: solid 5px transparent;
