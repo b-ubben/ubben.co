@@ -2,6 +2,7 @@ node_modules/*
 .cache/*
 public/blog/*
 public/index.html
-public/*.map
-public/*.js
-public/*.css
+public/bundle.js.map
+public/bundle.js
+public/main.css.map
+public/main.css
