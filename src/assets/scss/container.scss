@@ -1,0 +1,52 @@
+
+.container--blog-post {
+  background: $white;
+  color: $black;
+
+  & > article {
+    font-size: $large-font-size-fallback;
+    font-size: $large-font-size;
+    margin: 0 auto;
+    max-width: 48rem;
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+
+    a {
+      &:focus,
+      &:hover {
+        color: $black;
+      }
+    }
+
+    h1 {
+      font-size: 52px;
+      font-size: calc(52px + 0.25vw);
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    header,
+    section {
+      margin-bottom: 2rem;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+
+    figcaption {
+      font-size: $plus-font-size;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    img {
+      box-shadow: $shadow;
+      display: block;
+      width: 100%;
+    }
+  }
+}

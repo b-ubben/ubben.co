@@ -8,12 +8,17 @@ $white: #FAFAFA;
 $yellow: #E6B450;
 
 a {
-	color: $yellow;
-	font-weight: bold;
-	text-decoration: none;
+  color: $yellow;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
 }
 
 body {
-	background: $black;
-	color: $white;
+  background: $black;
+  color: $white;
 }

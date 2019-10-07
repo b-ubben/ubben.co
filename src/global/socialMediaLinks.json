@@ -18,5 +18,15 @@
     "channel": "Twitter",
     "url": "https://twitter.com/_ubben",
     "vanityUrl": "@_ubben"
+  },
+  {
+    "channel": "Instagram",
+    "url": "https://instagram.com/ubben.b",
+    "vanityUrl": "@ubben.b"
+  },
+  {
+    "channel": "CodePen",
+    "url": "https://codepen.io/_ubben",
+    "vanityUrl": "/_ubben"
   }
 ]

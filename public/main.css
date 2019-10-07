@@ -387,6 +387,9 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+a:focus, a:hover {
+  color: #FAFAFA;
+}
 
 body {
   background: black;
@@ -396,17 +399,23 @@ body {
 .logo-container {
   margin: 0;
   max-width: 75px;
+  min-height: 63px;
   padding: 0;
+}
+.logo-container > svg {
+  height: 100%;
+  min-height: 60px;
 }
 
 .nav {
-  background: rgba(0, 0, 0, 0.11);
-  box-shadow: 1px 3px 21px rgba(0, 0, 0, 0.11);
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 75px;
+  margin: 0;
   padding: 0.25rem 1rem;
+  z-index: 10;
 }
 
 .nav__links-list__item {
@@ -510,6 +519,48 @@ body {
 
 .show {
   display: block;
+}
+
+.container--blog-post {
+  background: #FAFAFA;
+  color: black;
+}
+.container--blog-post > article {
+  font-size: 18px;
+  font-size: calc(18px + 0.25vw);
+  margin: 0 auto;
+  max-width: 48rem;
+  padding: 0 1rem;
+  padding-bottom: 3rem;
+}
+.container--blog-post > article a:focus, .container--blog-post > article a:hover {
+  color: black;
+}
+.container--blog-post > article h1 {
+  font-size: 52px;
+  font-size: calc(52px + 0.25vw);
+  margin: 0;
+  padding: 1rem 0;
+}
+.container--blog-post > article header,
+.container--blog-post > article section {
+  margin-bottom: 2rem;
+}
+.container--blog-post > article figure {
+  margin: 0;
+  padding: 0;
+}
+.container--blog-post > article figcaption {
+  font-size: calc(14px + 0.25vw);
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.container--blog-post > article img {
+  box-shadow: 1px 3px 21px rgba(0, 0, 0, 0.11);
+  display: block;
+  width: 100%;
 }
 
 .index-hero {
@@ -649,6 +700,10 @@ body {
 .index-block__section {
   width: 50%;
   padding: 1rem;
+}
+
+.index-block__experience-list__item {
+  margin-bottom: 0.5rem;
 }
 
 .index-block__education-list__item,

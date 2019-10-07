@@ -1,0 +1,29 @@
+{
+  "about": {
+    "content": "I'm Brandon Ubben, a web developer, car nerd, music snob, mechanical keyboard enthusiast and huge fan of Linux and open-source software that currently lives and works in Los Angeles, CA. <br><br>This site is hosted on a <a href=\"https://linode.com\" target=\"_blank\" rel=\"noopener noreferrer\">Linode</a> server that I am currently using and abusing that is running Ubuntu 18.04 LTS. It is built using an awesome JavaScript based static site generator called <a href=\"https://11ty.io\" target=\"_blank\" rel=\"noopener noreferrer\">Eleventy</a>. I use NGINX to serve all my sites.",
+    "education": [
+      {
+        "schoolName": "California State University, Northridge",
+        "degreeOrCertification": "B.S. Computer Information Technology &mdash; Minor in Art (Web &amp; Graphic Design)",
+        "completionDate": "Graduated May 2018"
+      }
+    ],
+    "professionalExperience": [
+      {
+        "companyName": "Trucking Unlimited, LLC",
+        "positionOrTitle": "Web Engineer",
+        "startDate": "February 2018",
+        "endDate": "Current"
+      },
+      {
+        "companyName": "ACTA MoreToyGuns.com",
+        "positionOrTitle": "E-Commerce Manager",
+        "startDate": "October 2013",
+        "endDate": "January 2018"
+      }
+    ]
+  },
+  "contact": {
+    "content": "I am best reached out to on Twitter or by email if you really want to chat about anything. Otherwise, you can find me on these networks primarily.<br>Feel free to follow me on any of these if you'd like, and I'm always open for conversation about Linux, mechanical keyboards, development or music."
+  }
+}

@@ -2,13 +2,13 @@
   <h2 class="index-block__title">About</h2>
   <div class="index-block__flex-container">
     <section class="index-block__section">
-      <p class="index-block__content">{{ content.about.content | safe }}</p>
+      <p class="index-block__content">{{ copy.about.content | safe }}</p>
     </section>
 
     <section class="index-block__section">
-      <h4 class="index-block__list-title">Education</h4>
+      <h3 class="index-block__list-title">Education</h3>
       <ul class="index-block__education-list">
-        {% for item in content.about.education %}
+        {% for item in copy.about.education %}
         <li class="index-block__education-list__item">
           <strong>{{ item.schoolName | safe }}</strong>
           <br>
@@ -19,9 +19,9 @@
         {% endfor %}
       </ul>
 
-      <h4 class="index-block__list-title">Professional Experience</h4>
+      <h3 class="index-block__list-title">Professional Experience</h3>
       <ul class="index-block__experience-list">
-        {% for item in content.about.professionalExperience %}
+        {% for item in copy.about.professionalExperience %}
         <li class="index-block__experience-list__item">
           <strong>{{ item.companyName | safe }}</strong>
           <br>

@@ -1,2 +1,7 @@
 node_modules/*
 .cache/*
+public/blog/*
+public/index.html
+public/*.*.map
+public/*.js
+public/*.css
