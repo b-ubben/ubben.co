@@ -1,0 +1,15 @@
+.post-footer {
+  font-weight: 700;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.post-footer__link {
+  font-size: $plus-font-size-fallback;
+  font-size: $plus-font-size;
+
+  &:focus,
+  &:hover {
+    color: $black;
+  }
+}

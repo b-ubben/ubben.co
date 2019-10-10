@@ -1,0 +1,12 @@
+---
+layout: index
+title: Code &amp; Caffeine | All Blog Posts
+keywords: brandon ubben, ubben.co blog, web dev blog, developer blog
+description: All blog posts on ubben.co by Brandon Ubben
+---
+
+<ul>
+{% for post in collections.post %}
+    <li><a href="{{ post.data.permalink }}">{{ post.data.title }}</a></li>
+{% endfor %}
+</ul>
