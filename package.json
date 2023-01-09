@@ -12,7 +12,7 @@
   "author": "Brandon Ubben",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^1.0.2",
     "concurrently": "^4.1.2",
     "nav": "0.0.2",
     "normalize.css": "^8.0.1",
